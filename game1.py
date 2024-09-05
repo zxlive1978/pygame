@@ -1,7 +1,7 @@
 # Simple pygame program
 
 # Import and initialize the pygame library
-import pygame
+import pygame.sprite
 pygame.init()
 
 # Set up the drawing window
@@ -21,6 +21,7 @@ while running:
 
     # Draw a solid blue circle in the center
     pygame.draw.circle(screen, (0, 0, 255), (250, 250), 75)
+    pygame.draw.rect(screen, (255,0,0), 10, 2, 10)
 
     # Flip the display
     pygame.display.flip()
